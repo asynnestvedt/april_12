@@ -1,90 +1,68 @@
-# Basic Coding Exercise: Eco-Powered AI Microservice
+
+# Eco-Powered AI Microservice Challenge
 
 ## Introduction
 
-Dive into a challenge that blends your technical expertise with a flair for sustainability and innovation. We're seeking an elegantly designed microservice, built in **Golang**, **TypeScript**, or **Java**, which embodies the spirit of technology and advanced RESTful design, complemented by Docker containerization, strategic testing, and articulate documentation.
+In this challenge, you will design and develop a microservice that merges AI-driven technology with an eco-friendly theme. Your task is to create a RESTful API, containerized with Docker, complemented by well-written tests and clear documentation.
 
-### Your Mission
+### Key Requirements
 
-Develop a microservice that represents the next step in AI-driven, eco-friendly technology. The service should offer a simple yet impactful REST API endpoint that delivers a message combining eco-awareness and a playful nod to the profound mysteries of the universe.
+- **Language**: Choose Golang, TypeScript, or Java.
+- **API**: A single RESTful GET endpoint.
+- **Docker**: Containerize the microservice.
+- **Testing**: Implement at least one meaningful test.
+- **Documentation**: Provide detailed instructions in `README.md`.
 
-### Technical Requirements
+### The Challenge: AI & Sustainability API
 
-- **Programming Language**: Choose from Golang, TypeScript, or Java.
-- **API Design**: A single, meaningful RESTful GET endpoint.
-- **Containerization**: Use Docker for deployment.
-- **Testing**: Develop at least one relevant test.
-- **Documentation**: Provide clear and detailed documentation.
+Create a REST API with a single GET endpoint:
 
-## Challenge Details
+- **Endpoint**: `GET /universe-meaning/{param}`
+  - **Response**: "This AI is eco-powered and sustainable. The meaning of the universe is {param}."
 
-### Eco-Powered AI API Endpoint
+### Docker
 
-Create a RESTful GET endpoint that delivers an insightful message about sustainability and the universe:
-- `GET /universe-meaning/{param}`: Returns a message: "This AI is super green eco-powered and sustainable. The meaning of the universe is {param}."
-
-### Docker Containerization
-
-- Package your microservice in a Docker container.
-- Include a Dockerfile and detailed instructions for building and running the container.
+- Provide a Dockerfile to containerize the service.
+- Include instructions for building and running the container.
 
 ### Testing
 
-- Write a test for your API endpoint.
-- Describe how to run the test in your documentation.
+- Write a test to verify the API's functionality.
+- Include clear instructions to run the test in the documentation.
 
-### Documentation: Your Masterpiece
+### Documentation
 
-- Your `README.md` should illuminate your development journey, including:
-  - Instructions for setup and operation.
-  - An overview of your design choices.
-  - API endpoint documentation with example usage.
+Your `README.md` should cover:
+
+1. Setup instructions.
+2. Design rationale.
+3. Example usage of the API.
 
 ## Evaluation Criteria
 
-- **Code Quality**: Display your skill in crafting clean, efficient code.
-- **Functionality**: Your service should perform as expected, with a focus on the unique endpoint.
-- **Testing Depth**: Demonstrate the effectiveness of your test.
-- **Documentation Excellence**: Your documentation should be comprehensive and engaging.
+- **Code Quality**: Clean, efficient, maintainable code.
+- **Functionality**: The API performs as expected.
+- **Testing**: The test should be relevant and well-structured.
+- **Documentation**: Clear and concise, covering all necessary steps.
+
+## Bonus: Store GET Parameter History
+
+### Additional Task
+
+Store a history of the parameters passed to your API in a database. You can use MongoDB, PostgreSQL, SQLite, or another database.
+
+- **Database**: Store the history of `param` and any relevant metadata (e.g., timestamp).
+- **Optional**: Add an endpoint to retrieve stored parameters.
+
+### Documentation
+
+Expand the `README.md` to include:
+
+1. Database setup and integration.
+2. (Optional) Documentation of the retrieval endpoint.
 
 ## Submission
 
-- Share your work on any public code hosting platform.
-- Ensure the repository is accessible for evaluation.
-
-
-## Bonus Points: GET Parameters History Storage
-
-### Enhance Your Creation
-
-To elevate your solution and showcase your adeptness in handling data persistence, we introduce an additional challenge: store the history of GET parameters in a database of your choice.
-
-### Database Options
-
-Feel free to choose from a variety of databases, such as:
-- MongoDB
-- PostgreSQL
-- SQLite
-- Or any other database you prefer
-
-### Implementation Requirements
-
-- **Database Integration**: Seamlessly integrate a database to store the history of GET parameters received by your API endpoint.
-- **Data Structure**: Design a schema or data model that efficiently captures the GET parameters and any relevant metadata (like timestamp, user ID, etc.).
-- **Retrieval Endpoint (Optional)**: Consider adding another endpoint to retrieve the history of stored parameters.
-- **Resilience and Efficiency**: Ensure your implementation is robust and performs efficiently under varying loads.
-
-### Extended Documentation
-
-- Expand your `README.md` to include:
-  - Instructions on setting up the database and integrating it with your microservice.
-  - (If implemented) Documentation of the retrieval endpoint.
-
-### Evaluation of Bonus Points
-
-- **Database Integration Skills**: Demonstrate your ability to integrate and utilize a database effectively.
-- **Schema Design**: Show how your data model is optimized for the task.
-- **Code Elegance and Efficiency**: Maintain code quality and efficiency with the added complexity.
-- **Enhanced Documentation**: Your documentation should now reflect the additional features and provide clear guidance on them.
-
-Embrace this bonus challenge to push the boundaries of your microservice's capabilities and demonstrate a comprehensive understanding of data persistence and management. We're excited to see how you incorporate these features into your solution!
+- Host your code on a public platform (e.g., GitHub).
+- Ensure the repository is accessible for review.
+- Alternatively, zip and send your archive to the email provided during your interview.
